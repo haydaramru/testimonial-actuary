@@ -5,9 +5,9 @@ import mongoose from "mongoose";
 dotenv.config();
 
 // details from the env
-const username = process.env.username;
-const password = process.env.password;
-const dbName = "Post";
+const username = process.env.DB_USERNAME;
+const password = process.env.DB_PASSWORD;
+const dbName = process.env.DB_NAME;
 
 // connection string to mongo atlas
 const connectionString = `mongodb+srv://${username}:${password}@cluster0.85fxdxq.mongodb.net/${dbName}`;
