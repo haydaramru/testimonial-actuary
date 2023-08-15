@@ -1,6 +1,6 @@
 // importing modules
-import express, { text } from "express";
-import { TestiController } from "../controllers/post.controller";
+import express from "express";
+import { TestiController } from "../controllers/testimonial.controller";
 
 // initializing the router
 export const router = express.Router();
@@ -12,10 +12,10 @@ router.post("/", TestiController.addTestimonial);
 router.get("/", TestiController.getTestimonials);
 
 // get single post
-router.get("/", TestiController.getATestimonial);
+router.get("/:id", TestiController.getATestimonial);
 
 // update a post
-router.put("/", TestiController.updateTestimonial);
+router.put("/:id", TestiController.updateTestimonial);
 
 // delete a post
 router.delete("/:id", TestiController.deleteTestimonial);
