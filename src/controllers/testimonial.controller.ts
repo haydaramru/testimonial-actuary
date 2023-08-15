@@ -1,5 +1,5 @@
 // import modules
-import { testiServices } from "../services/post.service";
+import { testiServices } from "../services/testimonial.service";
 import { Request, Response } from "express";
 import { testiSchemaValidate } from "../models/testimonials";
 
