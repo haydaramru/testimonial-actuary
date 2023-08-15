@@ -26,7 +26,7 @@ const options = {
 exports.db = mongoose_1.default.connect(connectionString, options)
     .then(res => {
     if (res) {
-        console.log(`Database connection successfully to ${dbName}`);
+        console.log(`Successfully Connecting Database to ${dbName}`);
     }
 })
     .catch(err => {
