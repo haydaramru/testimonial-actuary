@@ -1,6 +1,6 @@
 import express from "express";
 import { db } from "../config/db.config";
-import { router } from "../routes/post.routes";
+import { router } from "../routes/testimonial.routes";
 
 const app = express();
 
@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // routes
-app.use("/express-typescript/v1/testimonial", router);
+app.use("/api/v1/testimonial", router);
 
 // db connection then server connection
 db.then(() => {
